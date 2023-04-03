@@ -1,13 +1,7 @@
 <div class="page-header">
     <h1>SpaceX Mission Launch List</h1>
   </div>
-  <mat-form-field>
-    <mat-label>Select Year</mat-label>
-    <mat-select [(ngModel)]="selectedYear" (selectionChange)="filterByYear(selectedYear)">
-      <mat-option value="">Select Year</mat-option>
-      <mat-option *ngFor="let year of getYears()" [value]="year">{{ year }}</mat-option>
-    </mat-select>
-  </mat-form-field>
+  <app-missionfilter [missionList]="missionList" (yearSelected)="filterMissionList($event)"></app-missionfilter>
   
   <div *ngFor="let mission of filteredMissionList" class="mission-container">
     <mat-card class="mission-card" (click)="openDialog(mission.flight_number)" [ngClass]="{'pointer': true}">
@@ -23,4 +17,3 @@
       </mat-card-content>
     </mat-card>
   </div>
-  

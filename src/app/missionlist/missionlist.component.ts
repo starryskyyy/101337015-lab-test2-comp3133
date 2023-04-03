@@ -32,13 +32,7 @@ export class MissionlistComponent {
     });
   }
 
-  getYears(): number[] {
-    return this.missionList.map(mission => mission.launch_year)
-      .filter((value, index, self) => self.indexOf(value) === index);
-  }
-
-  filterByYear(year: number) {
-    this.selectedYear = year;
+  filterMissionList(year: number) {
     if (year) {
       this.spacexapiService.getMissionByYear(year).subscribe((data: Mission[]) => {
         this.filteredMissionList = data;

@@ -15,12 +15,14 @@ import { MatInputModule } from '@angular/material/input';
 import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MissionfilterComponent } from './missionfilter/missionfilter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MissiondetailsComponent,
-    MissionlistComponent
+    MissionlistComponent,
+    MissionfilterComponent
   ],
   imports: [
     BrowserModule,
