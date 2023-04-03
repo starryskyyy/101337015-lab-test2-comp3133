@@ -1,1 +1,16 @@
-<p>missiondetails works!</p>
+<div mat-dialog-content class="dialog">
+    <img src="{{ missionDetails.links.mission_patch_small }}" alt="Mission Patch" style="display:inline-block; float:left; margin-right:20px; width: 180px;">
+    <div style="display:inline-block;">
+        <h2>Mission - {{ missionDetails.mission_name }}</h2>
+        <p>{{ missionDetails.launch_year }}</p>
+        <h2>Rocket</h2>
+        <h3>Name: {{ missionDetails.rocket.rocket_name }}</h3>
+        <h3>Type: {{ missionDetails.rocket.rocket_type }}</h3>
+    </div>
+    <br><br>
+    <h2>Launch site</h2>
+    <h3>{{missionDetails.launch_site.site_name_long}}</h3>
+    <h2>Launch Details</h2>
+    <h3>{{missionDetails.details}}</h3>
+</div>
+

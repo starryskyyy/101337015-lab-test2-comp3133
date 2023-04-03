@@ -1,0 +1,16 @@
+
+.dialog{
+    background-color: #2b2d42;
+    color: #edf2f4;
+}
+
+p{
+    margin: 0;
+}
+h3{
+    margin: 0;
+}
+h2{
+    margin-bottom: 0;
+    margin-top: 10px;
+}
