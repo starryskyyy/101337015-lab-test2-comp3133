@@ -38,10 +38,11 @@ export class MissionlistComponent {
   }
 
   filterByYear(year: number) {
-
     this.selectedYear = year;
     if (year) {
-      this.filteredMissionList = this.missionList.filter((mission: Mission) => mission.launch_year === year);
+      this.spacexapiService.getMissionByYear(year).subscribe((data: Mission[]) => {
+        this.filteredMissionList = data;
+      });
     } else {
       this.filteredMissionList = this.missionList;
     }
@@ -52,7 +53,6 @@ export class MissionlistComponent {
       MissiondetailsComponent,
       { data: { flight_number }, width: '700px' }
     )
-    console.log(flight_number);
   }
 
   trackByFn(index: number, item: Mission) {
