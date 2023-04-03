@@ -1,3 +1,6 @@
 
 html, body { height: 100%; }
 body { margin: 50px !important; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #2b2d42}
+.pointer {
+    cursor: pointer;
+  }

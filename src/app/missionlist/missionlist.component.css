@@ -1,0 +1,62 @@
+@use '@angular/material' as mat;
+
+.page-header {
+    text-align: center;
+    color: #edf2f4;
+  }
+.mission-card {
+    max-width: 100%;
+    margin-bottom: 8px;
+    background-color: #8d99ae;
+    color: #2b2d42;
+  }
+
+  .mission-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .mission-card {
+    width: 100%;
+  }
+  
+  .mission-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .mission-image {
+    width: 100px;
+    margin-right: 20px;
+  }
+  
+  .mission-image img {
+    width: 100%;
+  }
+  
+  .mission-details {
+    flex: 1;
+  }
+  
+  .mission-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .mission-subtitle {
+    font-size: 15px;
+    margin: 0;
+  }
+  
+  .mission-description {
+    margin: 18px 0;
+    font-size: 18px;
+  }
+
+  mat-select{
+    color: #edf2f4;
+  }
+  cdk-overlay-pane{
+    color: #edf2f4;
+  }

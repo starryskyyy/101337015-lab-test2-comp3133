@@ -1,1 +1,26 @@
-<p>missionlist works!</p>
+<div class="page-header">
+    <h1>SpaceX Mission Launch List</h1>
+  </div>
+  <mat-form-field>
+    <mat-label>Select Year</mat-label>
+    <mat-select [(ngModel)]="selectedYear" (selectionChange)="filterByYear(selectedYear)">
+      <mat-option value="">Select Year</mat-option>
+      <mat-option *ngFor="let year of getYears()" [value]="year">{{ year }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  
+  <div *ngFor="let mission of filteredMissionList" class="mission-container">
+    <mat-card class="mission-card" (click)="openDialog(mission.flight_number)" [ngClass]="{'pointer': true}">
+      <mat-card-content class="mission-content">
+        <div class="mission-image">
+          <img src="{{mission.links.mission_patch_small}}" alt="Mission Patch">
+        </div>
+        <div class="mission-details">
+          <h2 class="mission-title">{{mission.mission_name}}</h2>
+          <p class="mission-subtitle">{{mission.launch_year}}</p>
+          <p class="mission-description">{{mission.details}}</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  

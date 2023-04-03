@@ -1,5 +1,4 @@
 export class Mission{
-    id: number
     mission_name: string
     launch_year: number
     details: string
@@ -8,8 +7,7 @@ export class Mission{
         mission_patch_small: string;
       }
 
-    constructor(id: number, mission_name: string, launch_year: number, details: string, links: { mission_patch_small: string }, flight_number: number){
-        this.id = id
+    constructor(mission_name: string, launch_year: number, details: string, links: { mission_patch_small: string }, flight_number: number){
         this.mission_name = mission_name
         this.launch_year = launch_year
         this.details = details
