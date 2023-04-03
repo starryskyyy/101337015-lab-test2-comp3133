@@ -1,27 +1,34 @@
-# 101337015LabTest2Comp3133
+# COMP 3133 – Lab Test – 2 :student:
+# SpaceX Missions
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+The project was developed using TypeScript and Angular, and it retrieves data from the SpaceX API to display all the missions on the main screen. When a user clicks on a mission, a dialog window pops up to provide more details about the mission. Additionally, the project allows users to filter the missions by year.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Demo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+https://101337015-lab-test2-comp3133.vercel.app/
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Main page 
 
-## Running end-to-end tests
+![main page](https://snipboard.io/ZJOyMT.jpg)
+## Run Locally
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Clone the project
 
-## Further help
+```bash
+  git clone https://github.com/starryskyyy/101337015-lab-test2-comp3133
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Run the application using Visual Studio Code by using command
+
+```bash
+  ng serve --open     
+```
+
+## Authors
+
+- [@starryskyyy](https://github.com/starryskyyy) :sparkling_heart:
